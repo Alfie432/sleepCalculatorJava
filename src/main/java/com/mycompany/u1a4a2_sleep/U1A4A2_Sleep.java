@@ -224,8 +224,7 @@ public class U1A4A2_Sleep extends javax.swing.JFrame {
         
         // validate the input
         if (bYear > tYear) {
-            // set the text
-            System.exit(0);
+            daysAliveForText.setText("You were not born yet.");
         }
         
         // check if the birthday has already passed
