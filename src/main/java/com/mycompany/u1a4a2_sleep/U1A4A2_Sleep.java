@@ -4,6 +4,8 @@
  */
 package com.mycompany.u1a4a2_sleep;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author alfiea
@@ -224,7 +226,8 @@ public class U1A4A2_Sleep extends javax.swing.JFrame {
         
         // validate the input
         if (bYear > tYear) {
-            daysAliveForText.setText("You were not born yet.");
+            JOptionPane.showMessageDialog(this, "You weren't born yet");
+            System.exit(0);
         }
         
         // check if the birthday has already passed
